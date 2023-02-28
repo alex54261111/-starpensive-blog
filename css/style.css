@@ -1,0 +1,18 @@
+*{box-sizing: border-box;}
+body{
+    font-family: "Noto Sans CJK TC","Microsoft JhengHei",PingFang,STHeiti,sans-serif,serif;
+    margin: 0;
+}
+a {text-decoration: none;}
+nav{
+    display: flex;
+    background-color:antiquewhite;
+}
+nav a {
+    color: aquamarine;
+    padding: 10px;
+    text-align: center;
+}
+nav a:hover{
+    color:brown
+}
