@@ -1,2 +1,2 @@
-# -starpensive-project
-just some fun little thing
+# -starpensive blog
+blog develop
