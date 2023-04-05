@@ -6,32 +6,32 @@
     padding: 0;
 }
 
+header .indexBg{
+    height: 850px;
+    overflow:hidden;
+    background-color: aqua;
+    background: url(/images/chalo-gallardo-QAhSbzy1XhA-unsplash.jpg);
+    background-size:cover;
+}
+
 header .navBox{
     height: 30px;
-    background-color: rgb(66, 66, 66);
+    background-color: rgba(63, 63, 63, 0.3);
 }
 
 header .navBox a{
-    display: inline-block;
-    width: 80px;
+    width: 100px;
     height: 30px;
-    background-color: rgb(24, 51, 83);
+    background-color: rgb(33, 61, 96,0.3);
     float: left;
+    display: inline-block;
+    color: #fff;
     text-align: center;
     line-height: 30px;
-    color: rgb(255, 255, 255);
 }
 
-header .navBox a :hover {
-    border-bottom: 5px solid rgb(214, 214, 214);
-}
-
-header .indexBg{
-    height: 790px;
-    /* background-color: rgb(0, 255, 119); */
-    overflow:hidden;
-    background: url(/images/chalo-gallardo-QAhSbzy1XhA-unsplash.jpg);
-    background-size:cover;
+header .navBox a:hover{
+    border-bottom: 5px solid white;
 }
 
 header .indexBg h1{
@@ -53,8 +53,65 @@ main .mainBox{
     background-size: cover;
 }
 
+main .introduceBox{
+    width: 600px;
+    height: 850px;
+    background-color: rgb(0, 0, 0,0.5);
+    overflow: hidden; 
+}
 
+main .introduceBox h1{
+    margin: 60px 35px;
+    color: #fff;
+    font-size: 40px;
+}
 
+main .introduceBox h1:nth-child(2){
+    font-size: 30px;
+    margin: 20px 35px;
+}
+
+main .introduceBox p {
+    margin: 0 30px;
+    color: #fff;
+}
+
+main .footerBox{
+    width: 600px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-top: 400px;
+}
+
+main .iconBox{
+    width: 135px;
+    height: 50px;
+    float: right;
+    margin: 50px 30px 0 0;
+    display: inline-block;
+}
+main .iconBox a{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+main .iconBox a:first-child{
+    background: url(/images/ig＿icon.png);
+    background-size: cover;
+}
+
+main .iconBox a:nth-child(2){
+    background: url(/images/github_icon.png);
+    background-size: cover;
+    margin-left: 15px;
+}
+
+.mainBox .footerBox p:last-child{
+    margin-top: 175px;
+    text-align: center;
+}
 
 
 
