@@ -9,7 +9,7 @@
 body .noteBg {
   height: 5000px;
   overflow: hidden;
-  background: url(images/note_background.jpg);
+  background: url(/images/note_background.jpg);
   background-size: cover;
 }
 
