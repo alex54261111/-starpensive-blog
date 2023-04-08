@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .noteBg{
+    height: 2000px;
+    overflow:hidden;
+    background: url(/images/chalo-gallardo-QAhSbzy1XhA-unsplash.jpg);
+    background-size:cover;
+}
