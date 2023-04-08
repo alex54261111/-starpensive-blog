@@ -6,11 +6,11 @@
     padding: 0;
 }
 
-header .indexBg{
+header .headerBg{
     height: 850px;
     overflow:hidden;
     background-color: aqua;
-    background: url(/images/chalo-gallardo-QAhSbzy1XhA-unsplash.jpg);
+    background: url(/images/chalo-gallardo-mini.jpg);
     background-size:cover;
 }
 
@@ -24,7 +24,6 @@ header .navBox a{
     height: 30px;
     background-color: rgb(33, 61, 96,0.3);
     float: left;
-    display: inline-block;
     color: #fff;
     text-align: center;
     line-height: 30px;
@@ -34,22 +33,22 @@ header .navBox a:hover{
     border-bottom: 5px solid white;
 }
 
-header .indexBg h1{
+header h1{
     margin-top: 100px;
     font-size: 30px;
     text-align: center;
     color: aliceblue;
 }
 
-header .indexBg p{
+header p{
     text-align: center;
     color: aliceblue;
 
 }
 
-main .mainBox{
+main .mainBg{
     height: 850px;
-    background: url(/images/tony-litvyak-3SmWe3s7vkM-unsplash.jpg);
+    background: url(/images/tony-litvyak-bbUma-zmBwc-unsplash.jpg);
     background-size: cover;
 }
 
@@ -81,7 +80,7 @@ main .footerBox{
     height: 180px;
     background-color: rgba(0, 0, 0, 0.5);
     float: left;
-    margin-top: 400px;
+    margin-top: 430px;
 }
 
 main .iconBox{
@@ -89,7 +88,6 @@ main .iconBox{
     height: 50px;
     float: right;
     margin: 50px 30px 0 0;
-    display: inline-block;
 }
 main .iconBox a{
     width: 30px;
@@ -108,8 +106,8 @@ main .iconBox a:nth-child(2){
     margin-left: 15px;
 }
 
-.mainBox .footerBox p:last-child{
-    margin-top: 175px;
+.footerBox p:last-child{
+    margin-top: 150px;
     text-align: center;
 }
 
