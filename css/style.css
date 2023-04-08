@@ -10,7 +10,7 @@ header .headerBg{
     height: 850px;
     overflow:hidden;
     background-color: aqua;
-    background: url(/images/chalo-gallardo-mini.jpg);
+    background: url(images/chalo-gallardo-mini.jpg);
     background-size:cover;
 }
 
@@ -48,7 +48,7 @@ header p{
 
 main .mainBg{
     height: 850px;
-    background: url(/images/tony-litvyak-bbUma-zmBwc-unsplash.jpg);
+    background: url(images/tony-litvyak-bbUma-zmBwc-unsplash.jpg);
     background-size: cover;
 }
 
@@ -96,12 +96,12 @@ main .iconBox a{
 }
 
 main .iconBox a:first-child{
-    background: url(/images/ig＿icon.png);
+    background: url(images/ig＿icon.png);
     background-size: cover;
 }
 
 main .iconBox a:nth-child(2){
-    background: url(/images/github_icon.png);
+    background: url(images/github_icon.png);
     background-size: cover;
     margin-left: 15px;
 }
