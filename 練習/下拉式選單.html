@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* outline: 2px solid black; */
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .navBox {
+            width: 100%;
+            height: 150px;
+            background: #e9ff56;
+        }
+
+        /* .nav {
+            display: flex;
+            outline: 2px solid pink;
+        } */
+
+        .nav ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        
+        .nav>li {
+            position: relative;
+            float: left;
+            background-color: rgb(209, 156, 91);
+            margin-left: 5px;
+        }
+
+        .nav li ul{
+            display: none;
+        }
+
+        .nav li a {
+            width: 150px;
+            height: 50px;
+            color: #000;
+            background-color: aqua;
+            line-height: 50px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .nav li a:hover{
+            background-color: aliceblue;
+        }
+
+        .content{
+        width: 100%;
+        height: 500px;
+        background-color: rgb(181, 66, 66);
+       }
+    </style>
+</head>
+
+<body>
+    <div class="navBox">
+        <ul class="nav">
+            <li>
+                <a href="#">第一層</a>
+                <ul>
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">第一層</a>
+                <ul>
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">第一層</a>
+                <ul>
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content"></div>
+</body>
+<script>
+    // $(()=>{
+    //     $(".nav>li").mouseover(()=>{
+    //         $(this).children("ul").show();
+    //     })
+    //     $(".nav>li").mouseout(()=>{
+    //         $(this).children("ul").hide();
+    //     })
+    // })
+     $(()=> {
+            // 鼠标经过
+            $(".nav>li").mouseover(function() {
+                // $(this) jQuery 当前元素  this不要加引号
+                // show() 显示元素  hide() 隐藏元素
+                $(this).children("ul").stop().show(300);
+            });
+            // 鼠标离开
+            $(".nav>li").mouseout(function() {
+                $(this).children("ul").stop().hide(300);
+            })
+        })
+</script>
+</html>

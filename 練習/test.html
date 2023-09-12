@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<script>
+$(() => {
+   $('#aaa').accordion({
+       active: 2,
+       heightStyle: 'content',
+       create: function(event, ui) {
+           $('.ui-accordion-header-active').css({
+               'border': '1px solid #0e4b05',
+               'background-color': 'green'
+           })
+       },
+       beforeActivate: function(event, ui) {
+           ui.newHeader.css({
+               'border': '1px solid #0e4b05',
+               'background-color': 'green'
+           })
+
+
+           ui.oldHeader.css({
+               'border': '1px solid #c5c5c5',
+               'background-color': '#f6f6f6'
+           })
+       }
+   })
+})   
+</script>
+<body>
+   <div id="aaa">
+       <h1>2023年</h1>
+       <div>
+           <p>
+           Between 2014 and 2017, three quarters of the world’s coral reefs got sick. Many turned a bright white—a process scientists call coral bleaching—and thirty percent of those bleached corals died.
+       </p>
+       <p>
+           The culprit? Oceans warmed by climate change and an El Niño weather event turning up the heat on already hot water.
+       </p>
+       <p>
+           Record warming and the return of El Niño this summer is putting corals in danger once again.
+       </p>
+       </div>
+       <h1>2022年</h1>
+       <div>
+           With an entire ecosystem at stake, another El Niño event unfolding, and global temperatures rising, scientists are deploying experimental technology to help corals survive, restoring habitat by hand and tinkering with coral DNA. But it’s unclear whether it will be enough to help some of the world’s most vibrant coral survive.
+       </div>
+       <h1>2021年</h1>
+       <div>
+           “It looks like somebody’s taken an eraser and taken all the colors out of the corals,” says Marcy.
+       </div>
+   </div>
+</body>
+</html>

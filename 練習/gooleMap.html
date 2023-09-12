@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="entrtime"></span>
+    <form  id="myform" action="register.jsp" method="post">
+        帳號：<input id="uid" name="uid" value="a1"><p></p>
+        密碼：<input type="password" id="pwd" name="pwd" value="1234"><p></p>
+        密碼確認：<input type="password" id="pwd_confirm" name="pwd_conform" value="1234"><p></p>
+        <input type="submit" id="mysubmit" value="註冊">
+    </form>
+</body>
+<script>
+    window.onload=function(){
+        mysubmit.onclick=function(event){
+            event.preventDefault()
+            if(pwd.value !== pwd_confirm.value){
+                alert("密碼不一致")
+            }else{
+                myform.submit()
+            }
+        }
+    }
+    let entrtime = document.getElementById('entrtime');
+    entrtime.textContent = new Date
+</script>
+</html>

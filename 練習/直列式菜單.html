@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: 2px solid black;
+        }
+
+        body {
+            background-color: rgb(115, 144, 41);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header {
+
+        }
+
+        .menuBox {
+            width: 100%;
+            height: 1080px;
+            background:hsla(0, 0%, 0%, 0.3);
+            position: absolute;
+            overflow: hidden;
+            display: none;
+        }
+
+        .menuButtonOpen {
+            width: 50px;
+            height: 50px;
+            background-color: #99703a;
+        }
+
+        .menuButtonClose {
+            float: right;
+            width: 50px;
+            height: 50px;
+            background-color: #205975;
+        }
+
+        .menuButtonClose:hover {
+            background-color: aquamarine;
+        }
+
+        .menu {
+            width: 500px;
+            background-color: #fff;
+            height: 1080px;
+        }
+
+        .menu li {
+            display: inline-block;
+        }
+
+        .menu a {
+            width: 100%;
+            height: 50px;
+            color: black;
+            line-height: 50px;
+            text-align: center;
+            display: inline-block;
+            background: #13c3eb;
+        }
+
+        .menu .closeButton{
+            height: 50px;
+            width: 50px;
+            float: right;
+            background-color: #ffac40;
+        }
+
+        .menu ul{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menuBox">
+        <ul class="menu">
+            <div class="menuButtonClose"></div>
+            <li>
+                <li class="closeButton"></li>
+                <a href="#">第一層</a>
+                <ul>
+                   
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                </ul>
+            </li>
+            <li>
+                <li class="closeButton"></li>
+                <a href="#">第一層</a>
+                <ul>
+                   
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                </ul>
+            </li>
+            <li>
+                <li class="closeButton"></li>
+                <a href="#">第一層</a>
+                <ul>
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                    <li><a href="#">第二層</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <header>
+        <div class="menuButtonOpen"></div>
+       
+    </header>
+
+</body>
+<script>
+    $(() => {
+        // 鼠标经过
+        $(".menuButtonOpen").mouseover(function () {
+            if (($(".menuBox").mouseover) != 0) {
+                $(".menuBox").stop().show(300);
+            }
+        })
+        //按鈕點擊
+        $(".menuButtonClose").click(function () {
+            $(".menuBox").stop().hide(300);
+        })
+        // $(".menuBox").click(function () {
+        //     $(".menuBox").stop().hide(300);
+        // })
+let click1 = false
+let click2 = false
+let click3 = false
+        $(".menu>li").click(function() {
+                // $(this) jQuery 当前元素  this不要加引号
+                // show() 显示元素  hide() 隐藏元素
+                if(click1){
+                $(this).children("ul").stop().hide(300);
+                click1=false
+                console.log("click1=false")
+                }else{
+                    $(this).children("ul").stop().show(300);
+                console.log("click1=true")
+                click1=true
+
+                }
+                
+
+            });
+            // 鼠标离开
+           
+        });
+        // $("body").click(function() {
+        //     click = false
+        //     $(".menu").stop().hide(300);
+        //     console.log("body).clickclose")
+        // })
+  
+</script>
+
+</html>
